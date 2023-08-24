@@ -6,7 +6,6 @@ HOST = '127.0.0.1'
 PORT = 65432
 
 
-
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 client.connect((HOST, PORT))
 
@@ -28,10 +27,12 @@ def write():
         message = f'{nickname}: {input("")}'
         client.send(message.encode('utf-8'))
 
-nickname = input("Choose a nickname: ")
 
-receive_thread = threading.Thread(target=receive)
-receive_thread.start()
+if __name__ == '__main__':
+    nickname = input("Choose a nickname: ")
 
-write_thread = threading.Thread(target=write)
-write_thread.start()
+    receive_thread = threading.Thread(target=receive)
+    receive_thread.start()
+
+    write_thread = threading.Thread(target=write)
+    write_thread.start()
