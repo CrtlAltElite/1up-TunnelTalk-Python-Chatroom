@@ -1,8 +1,8 @@
 import socket
 import threading
 
-HOST = '127.0.0.1'
-PORT = 65432
+HOST = '6.tcp.ngrok.io'
+PORT = 11146
 
 
 
@@ -24,7 +24,7 @@ def receive():
 
 def write():
     while True:
-        message = f'{nickname}: {input("ME: ")}'
+        message = f'{nickname}: {input("")}'
         client.send(message.encode('utf-8'))
 
 nickname = input("Choose a nickname: ")
