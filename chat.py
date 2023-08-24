@@ -1,8 +1,9 @@
 import socket
 import threading
 
-HOST = '6.tcp.ngrok.io'
-PORT = 11146
+
+HOST = '127.0.0.1'
+PORT = 65432
 
 
 
