@@ -61,6 +61,3 @@ This document provides an overview of the key functions, methods, and classes us
   - Creates a new thread for receiving messages from the server.
   - Example: `receive_thread = threading.Thread(target=receive)`
 
----
-
-This overview should provide a clear understanding of the fundamental components and operations in the chat application project.
