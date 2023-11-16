@@ -8,6 +8,6 @@
 4.  Clone the Repo
 5.  On the Host/Server run the server.py `python server.py`
 6.  On the Host/Server in another terminal run nGrok `ngrok tcp 65432`
-7.  Find the Forawrding address for your nGrok and change the SERVER/PORT in chat.py accordingly
+7.  Find the Forwarding address for your nGrok and change the SERVER/PORT in chat.py accordingly
 7.  On the Client(s) run the chat.py `python chat.py`
 8.  Enjoy Chatting

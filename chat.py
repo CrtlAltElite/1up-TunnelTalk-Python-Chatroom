@@ -2,9 +2,10 @@ import socket
 import threading
 
 
-HOST = '127.0.0.1'
-PORT = 65432
-
+# HOST = '127.0.0.1'
+# PORT = 65432
+HOST = '2.tcp.ngrok.io'  # Only the hostname
+PORT = 16953  # Port number
 
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 client.connect((HOST, PORT))
